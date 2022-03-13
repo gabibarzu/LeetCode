@@ -1,5 +1,9 @@
 ﻿namespace LeetCode.Solutions.LinkedList
 {
+    /// <summary>
+    /// 206. Reverse Linked List
+    /// URL: https://leetcode.com/problems/reverse-linked-list/
+    /// </summary>
     public static class ReverseLinkedList
     {
         public class ListNode
@@ -13,7 +17,14 @@
             }
         }
 
-        public static ListNode Solution(ListNode head)
+        /// <summary>
+        /// Iterative way
+        /// Time: O(n)
+        /// Space: O(1)
+        /// </summary>
+        /// <param name="head"></param>
+        /// <returns></returns>
+        public static ListNode ReverseListIterative(ListNode head)
         {
             ListNode previous = null;
             while (head != null)
@@ -25,6 +36,32 @@
             }
 
             return previous;
+        }
+
+        /// <summary>
+        /// Iterative way
+        /// Time: O(n)
+        /// Space: O(1)
+        /// </summary>
+        /// <param name="head"></param>
+        /// <returns></returns>
+        public static ListNode ReverseListRecursive(ListNode head)
+        {
+            if (head == null)
+            {
+                return null;
+            }
+
+            var newHead = head;
+            if (head.Next != null)
+            {
+                newHead = ReverseListRecursive(head.Next);
+                head.Next.Next = head;
+            }
+
+            head.Next = null;
+
+            return newHead;
         }
     }
 }

@@ -24,7 +24,7 @@ namespace LeetCode.Tests.LinkedList
         public void Test_1()
         {
             var head = new ReverseLinkedList.ListNode(1, new ReverseLinkedList.ListNode(2, new ReverseLinkedList.ListNode(3)));
-            var solution = ReverseLinkedList.Solution(head);
+            var solution = ReverseLinkedList.ReverseListIterative(head);
             CastToArray(solution).Should().Contain(new[] { 3, 2, 1 });
         }
     }
