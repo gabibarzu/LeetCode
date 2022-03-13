@@ -1,5 +1,9 @@
 ﻿namespace LeetCode.Solutions.ArraysAndStrings
 {
+    /// <summary>
+    /// Time: O(n)
+    /// Space: O(1)
+    /// </summary>
     public static class IntegerToEnglishWords
     {
         private static string One(int num)

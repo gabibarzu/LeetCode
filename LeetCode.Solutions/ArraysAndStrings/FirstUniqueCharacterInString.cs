@@ -2,6 +2,10 @@
 
 namespace LeetCode.Solutions.ArraysAndStrings
 {
+    /// <summary>
+    /// Time: O (n+n) => O(n)
+    /// Space: O(1) -> English alphabet contains 26 letters
+    /// </summary>
     public static class FirstUniqueCharacterInString
     {
         public static int Solution(string s)
