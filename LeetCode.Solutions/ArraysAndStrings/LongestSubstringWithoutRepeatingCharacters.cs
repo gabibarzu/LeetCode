@@ -5,13 +5,15 @@ namespace LeetCode.Solutions.ArraysAndStrings
     public class LongestSubstringWithoutRepeatingCharacters
     {
         /// <summary>
+        /// 3. Longest Substring Without Repeating Characters
+        /// URL: https://leetcode.com/problems/longest-substring-without-repeating-characters
         /// Sliding window optimized
         /// Time: O(n)
         /// Space: O(m)
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        public static int Solution(string s)
+        public static int LengthOfLongestSubstring(string s)
         {
             var chars = new int[128];
             var left = 0;
@@ -44,7 +46,7 @@ namespace LeetCode.Solutions.ArraysAndStrings
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        private static int SolutionOptimized(string s)
+        public static int LengthOfLongestSubstringOptimized(string s)
         {
             var chars = new int?[128];
             var left = 0;
@@ -69,24 +71,6 @@ namespace LeetCode.Solutions.ArraysAndStrings
             }
 
             return res;
-        }
-
-        public static void Test()
-        {
-            var s = "abcabcbb";
-            var solution = Solution(s);
-            Console.WriteLine(nameof(LongestSubstringWithoutRepeatingCharacters));
-            Console.WriteLine(solution);
-            Console.WriteLine();
-        }
-
-        public static void TestOptimized()
-        {
-            var s = "abccbcbb";
-            var solution = SolutionOptimized(s);
-            Console.WriteLine(nameof(LongestSubstringWithoutRepeatingCharacters));
-            Console.WriteLine(solution);
-            Console.WriteLine();
         }
     }
 }
