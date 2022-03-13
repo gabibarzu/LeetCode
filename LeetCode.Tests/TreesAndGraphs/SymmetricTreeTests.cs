@@ -1,5 +1,6 @@
-﻿using FluentAssertions;
-using LeetCode.Solutions.TreesAndGraphs;
+﻿using LeetCode.Solutions.TreesAndGraphs;
+
+using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LeetCode.Tests.TreesAndGraphs

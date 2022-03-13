@@ -1,6 +1,6 @@
-﻿using FluentAssertions;
+﻿using LeetCode.Solutions.ArraysAndStrings;
 
-using LeetCode.Solutions.ArraysAndStrings;
+using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LeetCode.Tests.ArraysAndStrings
