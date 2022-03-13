@@ -2,9 +2,15 @@
 
 namespace LeetCode.Solutions.TreesAndGraphs
 {
-    public class NumberOfIslands
+    /// <summary>
+    /// 200. Number of Islands
+    /// URL: https://leetcode.com/problems/number-of-islands/
+    /// Time: O(M * N), m – rows and n – nr of columns
+    /// Space: O(M* N)
+    /// </summary>
+    public static class NumberOfIslands
     {
-        public int NumIslands(char[][] grid)
+        public static int NumIslands(char[][] grid)
         {
             var nrOfIslands = 0;
             for (var i = 0; i < grid.Length; i++)
