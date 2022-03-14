@@ -6,7 +6,7 @@ namespace LeetCode.Solutions.TreesAndGraphs
     /// 200. Number of Islands
     /// URL: https://leetcode.com/problems/number-of-islands/
     /// Time: O(M * N), m – rows and n – nr of columns
-    /// Space: O(M* N)
+    /// Space: O(M * N)
     /// </summary>
     public static class NumberOfIslands
     {
