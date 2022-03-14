@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
-using FluentAssertions;
+
 using LeetCode.Solutions.LinkedList;
+
+using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LeetCode.Tests.LinkedList
