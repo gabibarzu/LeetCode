@@ -1,5 +1,6 @@
-﻿using FluentAssertions;
-using LeetCode.Solutions.Others;
+﻿using LeetCode.Solutions.Others;
+
+using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LeetCode.Tests.Others
