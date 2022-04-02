@@ -33,10 +33,8 @@ namespace LeetCode.Solutions.ArraysAndStrings
                 {
                     return true;
                 }
-                else
-                {
-                    values.Add(item, needed);
-                }
+
+                values.Add(item, needed);
             }
 
             return false;
