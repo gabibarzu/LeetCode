@@ -3,19 +3,18 @@ using System.Linq;
 
 namespace LeetCode.Solutions.LinkedList
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public class MergeKSortedLists
     {
+        public class ListNode
+        {
+            public int val;
+            public ListNode next;
+            public ListNode(int val = 0, ListNode next = null)
+            {
+                this.val = val;
+                this.next = next;
+            }
+        }
         /// <summary>
         /// 23. Merge k Sorted Lists
         /// Url: https://leetcode.com/problems/merge-k-sorted-lists/
