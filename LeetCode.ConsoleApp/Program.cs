@@ -10,9 +10,6 @@ namespace LeetCode.ConsoleApp
             TwoSum.Test();
             TwoSum.ComplexTest();
 
-            LongestSubstringWithoutRepeatingCharacters.Test();
-            LongestSubstringWithoutRepeatingCharacters.TestOptimized();
-
             ContainerWithMostWater.Test();
 
             IntegerToRoman.Test();
